@@ -1,0 +1,59 @@
+:root {
+    --primaryColor: rgb(202, 10, 10);
+}
+
+body {
+    background-color: rgb(116, 0, 0);
+}
+
+@media screen and (max-width:444px) {
+    body {
+        margin: 0;
+    }
+
+    /* Click the menu button for a dropdown of navigation links */
+
+    header nav #menu-button {
+        text-align: center;
+        background-color: var(--primaryColor);
+        color: white;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul > li {
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        right: 18px;
+        background-color: rgb(218, 218, 218);
+        padding: 5px;
+    }
+
+    #introduction-background {
+        box-sizing: border-box;
+        width: 100%;
+        height: 6.25rem;
+        border: 1px solid;
+        border-top-color: var(--primaryColor);
+        border-bottom-color: var(--primaryColor);
+        background-color: black;
+        position: relative;
+    }
+
+    #introduction-background > img {
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        margin-left: 1.6875rem;
+    }
+
+    #jobTitle {
+        color: white;
+        text-decoration: underline;
+        position: absolute;
+        left: 9.5rem;
+        margin-top: 40px;
+    }
