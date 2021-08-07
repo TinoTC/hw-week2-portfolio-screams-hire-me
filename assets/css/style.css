@@ -107,7 +107,7 @@ body {
     }
 }
 /* Tablet/Computer Layouts*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: /*750*/474px) {
     header nav h2 {
         display: none;
         margin: 0;
@@ -135,12 +135,28 @@ body {
         background-color: black;
         border-top: solid var(--primaryColor) 2px;
         border-bottom: solid var(--primaryColor) 2px;
+        /*******************/
+        animation: changeColors 3s alternate infinite;
+        /*******************/
+    }
+
+    @keyframes changeColors {
+        0% {background-color: black;}
+        50% {background-color: var(--primaryColor);}
+        100% {background-color: white;}
     }
     
     #jobTitle {
         text-align: center;
         text-decoration: underline;
         color: white;
+        /******************/
+        animation: blackText 3s infinite
+        /******************/
+    }
+
+    @keyframes blackText {
+        100% {color: black;}
     }
     
     #introduction-background img {
@@ -195,4 +211,15 @@ body {
     #linkedin {
         margin-left: 115px;
     }
+}
+/* Things get squished so I changed the flex direction of the latest projects to column */
+
+@media screen and (max-width: 680px) {
+    .latest-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-images {
+        width: 30%;
 }
