@@ -9,6 +9,37 @@ body {
 
 header nav h2 {
     display: none;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 23px;
+}
+/*************************************/
+#introduction-background {
+    background-color: black;
+}
+
+#jobTitle {
+    color: white;
+}
+
+#introduction-background img {
+    width: 25%;
+}
+/*************************************/
+a:visited {
+    color: var(--primaryColor);
+}
+
+header nav ul li {
+    display: inline;
+    margin: 10px;
+    color: var(--primaryColor);
 }
 
 /* Mobile Layout */
@@ -101,7 +132,7 @@ header nav h2 {
     }
 
     #linkedin {
-        margin-left: 4.6rem
+        margin-left: 4.6rem;
     }
     
     a:visited {
