@@ -120,13 +120,26 @@ body {
         position: relative;
         bottom: 23px;
     }
-    /*************************************/
+    
+    header nav ul li {
+        display: inline;
+        margin: 10px;
+        color: var(--primaryColor);
+    }
+
+    a:visited {
+        color: var(--primaryColor);
+    }
+
     #introduction-background {
         background-color: black;
+        border-top: solid var(--primaryColor) 2px;
+        border-bottom: solid var(--primaryColor) 2px;
     }
     
     #jobTitle {
         text-align: center;
+        text-decoration: underline;
         color: white;
     }
     
@@ -135,14 +148,51 @@ body {
         position: relative;
         left: 38%;
     }
-    /*************************************/
-    a:visited {
-        color: var(--primaryColor);
+
+    .section-headings {
+        background-color: #CA0A0A;
+        color: white;
+        text-align: center;
+    }
+
+    #about-me-text {
+        box-sizing: border-box;
+        border: 2px solid black;
+        background-color: black;
+        margin: 20px;
+    }
+
+    #Name {
+        font-weight: bolder;
+    }
+
+    #about-me-text {
+        color: white;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 40px;
     }
     
-    header nav ul li {
-        display: inline;
+    .latest-work {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-images {
         margin: 10px;
-        color: var(--primaryColor);
+        border: 2px solid var(--primaryColor);
+        border-radius: 50%;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    #github {
+        margin-left: 45px;
+    }
+
+    #linkedin {
+        margin-left: 115px;
     }
 }
